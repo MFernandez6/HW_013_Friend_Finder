@@ -160,7 +160,7 @@
 
     <footer>
         <div class="container">
-            <a href="/api/friends">Discover Friends in Philly API</a>
+            <a href="/api/friends">"Friends" API List</a>
             <span>|</span>
             <a href="https://github.com/MFernandez6/HW_013_Friend_Finder">GH Repository</a>
         </div>
@@ -202,7 +202,7 @@
             };
             var currentURL = window.location.origin;
             // Ajax call for receiving response after POST req
-            $.post(currentURL + "/api/friends", newUser, function (data) {
+            $.post(currentURL + "/api/friends", userData, function (data) {
                 $("#bestFriend").text(data.name);
                 $("#bestFriendPhoto").attr("src", data.photo);
                 $("#bestFriendModal").modal("toggle");
